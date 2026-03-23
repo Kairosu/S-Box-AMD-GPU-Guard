@@ -1,4 +1,4 @@
-# S-Box-AMD-GPU-Guard
+# S&Box AMD GPU Guard
 
 Fixes AMD Vulkan `Crash ef75f582` from envmap probes leaking descriptors across play/stop cycles // Drop this on any GameObject in your scene
 `CRenderDeviceVulkan::UpdateDescriptorSetPool(): Vulkan failed to create descriptor pool.`
