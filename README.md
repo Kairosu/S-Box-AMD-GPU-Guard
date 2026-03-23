@@ -1,6 +1,6 @@
 # S-Box-AMD-GPU-Guard
 
-Fixes AMD Vulkan crash from envmap probes leaking descriptors across play/stop cycles // Drop this on any GameObject in your scene
+Fixes AMD Vulkan `Crash ef75f582` from envmap probes leaking descriptors across play/stop cycles // Drop this on any GameObject in your scene
 `CRenderDeviceVulkan::UpdateDescriptorSetPool(): Vulkan failed to create descriptor pool.`
 # How does this fix it?
 Delays the map load on play start. It disables the MapInstance component for ~10 frames so the GPU has time to actually clean up resources from the last session before getting hammered with new cubemap renders.
